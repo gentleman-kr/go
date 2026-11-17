@@ -1,0 +1,6 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Melatonin</title>
+<script>
+// 등록 안 한 이름도 받는다 — /go/<이름> 의 마지막 칸을 서버로 넘긴다(서버가 영문·숫자·하이픈만 받는다).
+var c=(location.pathname.split("/").filter(Boolean).pop()||"").toLowerCase();
+location.replace(/^[a-z0-9-]{1,40}$/.test(c)&&c!=="go"?"https://a6eh6ylzx5.execute-api.ap-northeast-2.amazonaws.com/go/"+c:"https://apps.apple.com/app/id6811927907");
+</script></head><body></body></html>
